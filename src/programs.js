@@ -249,7 +249,7 @@ function Flash(file_path) {
 
     var $win = make_iframe_window({
         src: "programs/flash/" + (file_path ? ("?swf=" + file_path) : ""),
-        icons: iconsAtTwoSizes("notepad"),
+        icons: iconsAtTwoSizes("adobe-flash"),
         title: win_title,
         outerWidth: 480,
         outerHeight: 321,
