@@ -1237,16 +1237,6 @@ add_icon_not_via_filesystem({
     // file_path: "/network-neighborhood/",
     is_system_folder: true,
 });
-add_icon_not_via_filesystem({
-    title: "Flash Games",
-    iconID: "my-documents-folder",
-    open: function() { systemExecuteFile("/games/flash"); },
-});
-add_icon_not_via_filesystem({
-    title: "DOSBox Games",
-    iconID: "my-documents-folder",
-    open: function() { systemExecuteFile("/games/dosbox"); },
-});
 /*
 add_icon_not_via_filesystem({
     title: "Recycle Bin",
@@ -1261,33 +1251,33 @@ add_icon_not_via_filesystem({
     shortcut: true
 });
 add_icon_not_via_filesystem({
+    title: "Notepad",
+    iconID: "notepad",
+    open: Notepad,
+    shortcut: true
+});
+add_icon_not_via_filesystem({
     title: "Paint",
     iconID: "paint",
     open: Paint,
     shortcut: true
 });
 add_icon_not_via_filesystem({
-    title: "Minesweeper",
-    iconID: "minesweeper",
-    open: Minesweeper,
+    title: "MS-DOS Prompt",
+    iconID: "msdos",
+    open: CommandPrompt,
+    shortcut: true
+});
+add_icon_not_via_filesystem({
+    title: "Calculator",
+    iconID: "calculator",
+    open: Calculator,
     shortcut: true
 });
 add_icon_not_via_filesystem({
     title: "Sound Recorder",
     iconID: "speaker",
     open: SoundRecorder,
-    shortcut: true
-});
-add_icon_not_via_filesystem({
-    title: "Solitaire",
-    iconID: "solitaire",
-    open: Solitaire,
-    shortcut: true
-});
-add_icon_not_via_filesystem({
-    title: "Notepad",
-    iconID: "notepad",
-    open: Notepad,
     shortcut: true
 });
 /*
@@ -1303,6 +1293,49 @@ add_icon_not_via_filesystem({
     open: DOSBoxGames,
     shortcut: true
 });*/
+add_icon_not_via_filesystem({
+    title: "Flash Games",
+    iconID: "my-documents-folder",
+    open: function() { systemExecuteFile("/games/flash"); },
+});
+add_icon_not_via_filesystem({
+    title: "DOSBox Games",
+    iconID: "my-documents-folder",
+    open: function() { systemExecuteFile("/games/dosbox"); },
+});
+add_icon_not_via_filesystem({
+    title: "Solitaire",
+    iconID: "solitaire",
+    open: Solitaire,
+    shortcut: true
+});
+add_icon_not_via_filesystem({
+    title: "Minesweeper",
+    iconID: "minesweeper",
+    open: Minesweeper,
+    shortcut: true
+});
+add_icon_not_via_filesystem({
+    title: "Pinball",
+    iconID: "pinball",
+    open: Pinball,
+    shortcut: true
+});
+add_icon_not_via_filesystem({
+    title: "2048",
+    iconID: "2048",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/games/html/2048/",
+            icons: iconsAtTwoSizes("2048"),
+            title: "2048",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
 add_icon_not_via_filesystem({
     title: "Winamp",
     iconID: "winamp2",
@@ -1321,24 +1354,7 @@ add_icon_not_via_filesystem({
     open: FlowerBox,
     shortcut: true
 });
-add_icon_not_via_filesystem({
-    title: "MS-DOS Prompt",
-    iconID: "msdos",
-    open: CommandPrompt,
-    shortcut: true
-});
-add_icon_not_via_filesystem({
-    title: "Calculator",
-    iconID: "calculator",
-    open: Calculator,
-    shortcut: true
-});
-add_icon_not_via_filesystem({
-    title: "Pinball",
-    iconID: "pinball",
-    open: Pinball,
-    shortcut: true
-});
+
 
 folder_view.arrange_icons();
 
