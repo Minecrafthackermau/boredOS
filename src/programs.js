@@ -1429,6 +1429,21 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "Mari0",
+    iconID: "mari0",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/games/html/mari0",
+            icons: iconsAtTwoSizes("mari0"),
+            title: "Mari0",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
 
 
 folder_view.arrange_icons();
