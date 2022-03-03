@@ -267,7 +267,7 @@ function DOSBoxGames(file_path) {
 
     var $win = make_iframe_window({
         src: "programs/dosbox/" + (file_path ? ("?soft=" + file_name_from_path(file_path).replace(".zip", "")) : ""),
-        icons: iconsAtTwoSizes("notepad"),
+        icons: iconsAtTwoSizes("dosbox"),
         title: win_title,
         outerWidth: 480,
         outerHeight: 321,
@@ -1295,13 +1295,43 @@ add_icon_not_via_filesystem({
 });*/
 add_icon_not_via_filesystem({
     title: "Flash Games",
-    iconID: "my-documents-folder",
+    iconID: "adobe-flash",
     open: function() { systemExecuteFile("/games/flash"); },
 });
 add_icon_not_via_filesystem({
     title: "DOSBox Games",
-    iconID: "my-documents-folder",
+    iconID: "dosbox",
     open: function() { systemExecuteFile("/games/dosbox"); },
+});
+add_icon_not_via_filesystem({
+    title: "Bored in School Right Now",
+    iconID: "bored",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://boredht.ml/",
+            icons: iconsAtTwoSizes("bored"),
+            title: "Bored in School Right Now",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "OS.js",
+    iconID: "os-js",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://demo.os-js.org/",
+            icons: iconsAtTwoSizes("os-js"),
+            title: "OS.js",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
 });
 add_icon_not_via_filesystem({
     title: "EmuOS",
@@ -1311,8 +1341,8 @@ add_icon_not_via_filesystem({
             src: "https://emupedia.net/beta/emuos/",
             icons: iconsAtTwoSizes("emuos"),
             title: "EmuOS",
-            outerWidth: 530,
-            outerHeight: 530,
+            outerWidth: 835,
+            outerHeight: 500,
             resizable: true,
         }));
     },
@@ -1326,8 +1356,8 @@ add_icon_not_via_filesystem({
             src: "https://v1.windows93.net/",
             icons: iconsAtTwoSizes("windows-93"),
             title: "Windows 93",
-            outerWidth: 530,
-            outerHeight: 530,
+            outerWidth: 835,
+            outerHeight: 500,
             resizable: true,
         }));
     },
@@ -1341,8 +1371,8 @@ add_icon_not_via_filesystem({
             src: "https://win96.boredht.ml/",
             icons: iconsAtTwoSizes("windows-96"),
             title: "Windows 96",
-            outerWidth: 530,
-            outerHeight: 530,
+            outerWidth: 835,
+            outerHeight: 500,
             resizable: true,
         }));
     },
@@ -1356,8 +1386,8 @@ add_icon_not_via_filesystem({
             src: "https://win98.boredht.ml",
             icons: iconsAtTwoSizes("windows-update"),
             title: "Windows 98",
-            outerWidth: 530,
-            outerHeight: 530,
+            outerWidth: 835,
+            outerHeight: 500,
             resizable: true,
         }));
     },
@@ -1422,8 +1452,8 @@ add_icon_not_via_filesystem({
             src: "https://craft.boredht.ml",
             icons: iconsAtTwoSizes("minecraft"),
             title: "Classic Minecraft",
-            outerWidth: 530,
-            outerHeight: 530,
+            outerWidth: 835,
+            outerHeight: 500,
             resizable: true,
         }));
     },
@@ -1474,7 +1504,14 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
-
+add_icon_not_via_filesystem({
+    title: "View on GitHub",
+    iconID: "github",
+    open: function() {
+        window.open("https://github.com/Bored-Entertainment/boredOS", "_blank");
+    },
+    shortcut: true,
+});
 
 folder_view.arrange_icons();
 
