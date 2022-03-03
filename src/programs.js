@@ -1459,6 +1459,21 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "There is no game",
+    iconID: "thereisnogame",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/games/html/thereisnogame/",
+            icons: iconsAtTwoSizes("thereisnogame"),
+            title: "There is no game",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
 
 
 folder_view.arrange_icons();
