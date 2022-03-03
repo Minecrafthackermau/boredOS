@@ -76,6 +76,7 @@ var file_extension_icons = {
 	url: "html",
 	theme: "themes",
 	themepack: "themes",
+    "swf": "swf",
 };
 
 // @TODO: maintain less fake naming abstraction
