@@ -1,9 +1,9 @@
-Hello! Welcome to 98.js.org
+Hello! Welcome to boredOS
 
-https://github.com/1j01/98
+https://github.com/Bored-Entertainment/boredOS
 
 --------------------------------------
-Apps
+Apps from 98.js.org
 ====----------------------------------
 
 Paint, Sound Recorder, Notepad, 3D Pipes, Explorer, and the 98.js desktop

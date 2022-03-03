@@ -1,13 +1,13 @@
 {
     "name": "boredOS",
-    "description": "Web-based Windows 98 clone",
+    "description": "Web-based OS clone",
     "version": "0.0.1",
     "repository": {
         "type": "git",
-        "url": "https://github.com/1j01/98.git"
+        "url": "https://github.com/Bored-Entertainment/boredOS.git"
     },
     "bugs": {
-        "url": "https://github.com/1j01/98/issues"
+        "url": "https://github.com/Bored-Entertainment/boredOS/issues"
     },
     "license": "MIT",
     "devDependencies": {
