@@ -1414,6 +1414,21 @@ add_icon_not_via_filesystem({
     },
     shortcut: true,
 });
+add_icon_not_via_filesystem({
+    title: "Classic Minecraft",
+    iconID: "minecraft",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://craft.boredht.ml",
+            icons: iconsAtTwoSizes("minecraft"),
+            title: "Classic Minecraft",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
 
 
 folder_view.arrange_icons();
