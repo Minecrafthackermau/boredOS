@@ -1304,6 +1304,66 @@ add_icon_not_via_filesystem({
     open: function() { systemExecuteFile("/games/dosbox"); },
 });
 add_icon_not_via_filesystem({
+    title: "EmuOS",
+    iconID: "emuos",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://emupedia.net/beta/emuos/",
+            icons: iconsAtTwoSizes("emuos"),
+            title: "EmuOS",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Windows 93",
+    iconID: "windows-93",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://v1.windows93.net/",
+            icons: iconsAtTwoSizes("windows-93"),
+            title: "Windows 93",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Windows 96",
+    iconID: "windows-96",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://win96.boredht.ml/",
+            icons: iconsAtTwoSizes("windows-96"),
+            title: "Windows 96",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Windows 98",
+    iconID: "windows-update",
+    open: function() {
+        Task(make_iframe_window({
+            src: "https://win98.boredht.ml",
+            icons: iconsAtTwoSizes("windows-update"),
+            title: "Windows 98",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
     title: "Solitaire",
     iconID: "solitaire",
     open: Solitaire,
@@ -1322,21 +1382,6 @@ add_icon_not_via_filesystem({
     shortcut: true
 });
 add_icon_not_via_filesystem({
-    title: "2048",
-    iconID: "2048",
-    open: function() {
-        Task(make_iframe_window({
-            src: "/games/html/2048/",
-            icons: iconsAtTwoSizes("2048"),
-            title: "2048",
-            outerWidth: 530,
-            outerHeight: 530,
-            resizable: true,
-        }));
-    },
-    shortcut: true,
-});
-add_icon_not_via_filesystem({
     title: "Winamp",
     iconID: "winamp2",
     open: openWinamp,
@@ -1353,6 +1398,21 @@ add_icon_not_via_filesystem({
     iconID: "pipes",
     open: FlowerBox,
     shortcut: true
+});
+add_icon_not_via_filesystem({
+    title: "2048",
+    iconID: "2048",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/games/html/2048/",
+            icons: iconsAtTwoSizes("2048"),
+            title: "2048",
+            outerWidth: 530,
+            outerHeight: 530,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
 });
 
 
