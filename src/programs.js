@@ -1434,9 +1434,24 @@ add_icon_not_via_filesystem({
     iconID: "mari0",
     open: function() {
         Task(make_iframe_window({
-            src: "/games/html/mari0",
+            src: "/games/html/mari0/",
             icons: iconsAtTwoSizes("mari0"),
             title: "Mari0",
+            outerWidth: 835,
+            outerHeight: 500,
+            resizable: true,
+        }));
+    },
+    shortcut: true,
+});
+add_icon_not_via_filesystem({
+    title: "Cookie Clicker",
+    iconID: "cookieclicker",
+    open: function() {
+        Task(make_iframe_window({
+            src: "/games/html/cookieclicker/",
+            icons: iconsAtTwoSizes("cookieclicker"),
+            title: "Cookie Clicker",
             outerWidth: 835,
             outerHeight: 500,
             resizable: true,
