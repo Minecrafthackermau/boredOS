@@ -77,6 +77,7 @@ var file_extension_icons = {
 	theme: "themes",
 	themepack: "themes",
     "swf": "swf",
+    zip: "dosbox-file"
 };
 
 // @TODO: maintain less fake naming abstraction
