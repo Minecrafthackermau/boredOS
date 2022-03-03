@@ -35,7 +35,7 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our [code of condu
 
 ## Authors
 
-- **[PiSaucer](https://github.com/PiSaucer)** - *Initial work* and created majority of the site
+- **[PiSaucer](https://github.com/PiSaucer)** - *Initial work*
 - **[dependabot](https://github.com/apps/dependabot)** - Checks Security of code
 
 See also the list of other [contributors](https://github.com/Bored-Entertainment/boredOS/contributors) who participated in this project.
